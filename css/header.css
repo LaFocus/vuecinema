@@ -86,6 +86,28 @@
     transform: translateX(-50%);
 }
 
-.menu__link:hover.menu__link::after{
+.menu__link:hover.menu__link::after {
     width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .nav__inner {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .menu__link::after {
+        bottom: -29px;
+    }
+
+}
+
+@media screen and (max-width: 360px) {
+    .nav__menu {
+        gap: 15px;
+    }
 }
