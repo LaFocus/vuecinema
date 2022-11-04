@@ -45,8 +45,10 @@ body {
     line-height: 12px;
     color: var(--w);
     transition: 300ms;
+    display: inline-block;
 }
 
 .btn:hover {
     background: var(--or);
+    color: var(--bl);
 }
