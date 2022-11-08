@@ -19,11 +19,26 @@
     z-index: 10;
     width: 255px;
     height: 367px;
+    border-radius: 6px;
+    padding: 54px 14px 18px 14px;
+    transition: 300ms;
+}
+
+.films__card .card__body:hover {
+    opacity: 1;
+}
+
+.films__card:hover {
+    transform: scale(1.3);
+    z-index: 100;
+    box-shadow: -2px -8px 52px 31px rgba(0, 0, 0, 0.75);
+}
+.card__body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 6px;
-    padding: 54px 14px 18px 14px;
+    opacity: 0;
+    transition: 300ms;
 }
 
 .card__img {
