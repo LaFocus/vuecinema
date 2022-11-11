@@ -1,0 +1,115 @@
+.series {
+    margin-bottom: 63px;
+}
+
+.series__poster {
+    position: relative;
+    margin-top: 54px;
+    width: 1113px;
+    display: flex;
+    height: 436px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    padding: 0 22px;
+}
+
+.poster__img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.poster-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 10.86%, rgba(11, 11, 11, 0.6) 110.86%);
+    border-radius: 6px;
+}
+
+.poster__title {
+    font-family: var(--cb);
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+}
+
+.poster__text {
+    font-family: var(--cr);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin: 27px 0 30px;
+    text-align: center;
+}
+
+.series__collection {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 190px;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.series__card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.series__card-imgBg {
+    position: absolute;
+    z-index: -2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.series__card-bg {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    background: linear-gradient(95.68deg, rgba(35, 35, 35, 0.8) 0%, rgba(11, 11, 11, 0.6) 100%);
+}
+
+.series__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.series__icon {
+    font-size: 40px;
+}
+
+.series__title {
+    font-family: var(--cb);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.series__card:first-child {
+    grid-column: span 2;
+    grid-row: span 2;
+}
